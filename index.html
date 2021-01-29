@@ -16,101 +16,110 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+    <span id="body-content">
+        <!--Header and Menu Section-->
+        <header id="head-content" class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+        <!--Booking Section-->
+        <main id="main-content" class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
                         <input class="inp-style" type="date" name="">
-                </div>
-                <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="f-class-input" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button id="fClassPlusBtn"><i class="fas fa-plus"></i></button>
-                    <button id="fClassMinusBtn"><i class="fas fa-minus"></i></button>
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="e-class-input" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button id="eClassPlusBtn"><i class="fas fa-plus"></i></button>
-                    <button id="eClassMinusBtn"><i class="fas fa-minus"></i></button>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="right">
-                        <p id="subTotal">$00</p>
                     </div>
                 </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="f-class-input" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button id="fClassPlusBtn"><i class="fas fa-plus"></i></button>
+                        <button id="fClassMinusBtn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="e-class-input" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button id="eClassPlusBtn"><i class="fas fa-plus"></i></button>
+                        <button id="eClassMinusBtn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p id="subTotal">$00</p>
+                        </div>
+                    </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p id="vat">$00</p>
+                        </div>
                     </div>
-                    <div class="right">
-                        <p id="vat">$00</p>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p id="grandTotal">$000</p>
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p id="grandTotal">$000</p>
-                    </div>
-                </div>
+                <button id="bookingBtn" class="btn-style">Book Now</button>
             </div>
-            <button class="btn-style">Book Now</button>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise
+                    voluptatibus quam</p>
+            </div>
+        </main>
+    </span>
+    <section>
+        <div id="success-message">
+            <h1 class="card-title" style="font-size: 40px; font-weight: bold;">Thank You so Much !</h1>
+            <p class="card-text">Aww yeah, you successfully Booking Ticket. Enjoy Your Journey. Best Of luck.</p>
+            <a href="index.html">Go to Home page</a>
         </div>
-
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
-        </section>
-
-        <script src="index.js"></script>
-        <!--Thank You-->
+    </section>
+    <script src="index.js"></script>
+    <!--Thank You-->
 </body>
 
 </html>

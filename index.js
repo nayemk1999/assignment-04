@@ -52,4 +52,17 @@ function ticketCount(className) {
     return classPriceNum;
 }
 
+// Success Message
+document.getElementById("bookingBtn").addEventListener("click", function () {
+    if (confirm("Do you want to Booking Ticket?") == true) {
+        document.getElementById("body-content").style.display = "none";
+        document.body.style.backgroundImage = "none";
+        document.getElementById("success-message").style.display = "block";
+
+    } else {
+        userPreference = "Tour Ticket Booking Canceled! Please try again.";
+        document.getElementById("main-content").style.display = "none";
+    }
+})
+
 //Thank You !
